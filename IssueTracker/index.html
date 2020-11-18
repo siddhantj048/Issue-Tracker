@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Issue Tracker- By Siddhant Joshi!</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=aCdHkb5BCG4rQ4HaEpY2sGxPq5lU7RJuejOV7jKYueJhptUjDYq2AY6O_fBJTV2XO0uH15AEXzmIsUqzH9MrJg" charset="UTF-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+</head>
+
+<body>
+    <h1 class="title">Issue Tracker</h1>
+    <section class="container" id="add_issue_form">
+        <form>
+            <label for="description">Description:</label>
+            <input type="text" id="description" autocomplete="off" placeholder="Description of the issue - ">
+            <label for="assign_to">Assign to:</label>
+            <input type="text" id="assign_to" autocomplete="off" placeholder="Assign the issue to - ">
+            <label for="priority">Priority:</label>
+            <select name="Priority" id="priority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+
+        </form>
+
+        <p class="add_button" onclick="AddIssue()"> Add </p>
+
+    </section>
+
+    <section class="container" id="curent_issues">
+        <div id="issue0" class="issueContainer">
+            <p><span class="stand_out">Assiged to: </span>Username</p>
+            <p><span class="stand_out">Priority: </span>Medium</p>
+            <p class="stand_out">Description: </p>
+            <p>Dummy Text instead of the description</p>
+            <p class="delete_button" onclick="DeleteIssue(0)">Delete</p>
+            <hr>
+        </div>
+
+    </section>
+
+
+    <section class="change_between_issues">
+        <p class="button" id="curentIssuesBtn" onclick="SwitchMode('curentIssuesBtn')">Current issue</p>
+        <p class="button selected" id="addIssueBtn" onclick="SwitchMode('addIssueBtn')">Add issue</p>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

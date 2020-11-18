@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #f0f5ff;
+}
+
+.title {
+    color: #0059ff;
+    width: 100%;
+    margin-top: 7vh;
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+.container {
+    position: absolute;
+    background-color: #f7f7f7;
+    padding: 1.5rem 3rem;
+    width: 60vw;
+    height: 60vh;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 2px 2px 5px 5px #e1e6e6;
+}
+
+.change_between_issues {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+    margin-left: 35vw;
+    margin-top: 75vh;
+}
+
+.button {
+    color: #0059ff;
+    background-color: #fcffff;
+    text-align: center;
+    width: 10vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px 2px #e1e6e6;
+    transition: 1s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.selected {
+    background-color: #ffc421;
+    color: #fcffff;
+}
+
+.add_button {
+    color: #fcffff;
+    background-color: #0059ff;
+    text-align: center;
+    width: 5vw;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 1s;
+}
+
+.add_button:hover {
+    transform: scale(1.1);
+}
+
+form {
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+label {
+    color: #595959;
+    font-size: 1.3rem;
+}
+
+input {
+    height: 1.5rem;
+    padding: 00.5rem;
+    border: none;
+    outline-color: #7d7d7d;
+    border-radius: none;
+}
+
+select {
+    padding: 0.75rem;
+    border: none;
+    border-radius: none;
+    outline-color: #7d7d7d;
+    cursor: pointer;
+    appearance: none;
+}
+
+#curent_issues {
+    display: none;
+    overflow: auto;
+}
+
+.issueContainer {
+    position: relative;
+    float: left;
+    color: #7d7d7d;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.2rem;
+}
+
+.issueContainer p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.stand_out {
+    font-size: 1.2rem;
+    color: #595959;
+}
+
+hr {
+    color: #595959;
+    width: 100%;
+    margin-left: 0;
+}
+
+.delete_button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: red;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .add_button {
+        width: 15vw;
+    }
+    .change_between_issues {
+        margin-left: 10vw;
+        width: 80vw;
+    }
+    .button {
+        width: 30vw;
+    }
+}
