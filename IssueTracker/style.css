@@ -14,6 +14,14 @@ body {
     font-size: 3rem;
     
 }
+.idek{
+    float: right;
+    margin-top:inherit;
+    color: #00FF00;
+    width: 10%;
+    font-family: cursive;
+    
+}
 
 .container {
     position: absolute;
