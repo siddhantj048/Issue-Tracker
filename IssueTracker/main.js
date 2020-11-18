@@ -114,7 +114,7 @@ function DeleteIssue(i) {
         Container.removeChild(curentIssue);
 }
 const options = {
-  bottom: '32px', // default: '32px'
+  bottom: '540px', // default: '32px'
   right: '32px', // default: '32px'
   left: 'unset', // default: 'unset'
   time: '0.2s', // default: '0.3s'
